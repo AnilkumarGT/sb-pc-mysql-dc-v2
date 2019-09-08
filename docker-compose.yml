@@ -1,0 +1,20 @@
+version: '3'
+services:
+  pc-db:
+    container_name: pc-db
+    image: mysql/mysql-server:5.7
+    environment:
+     MYSQL_ROOT_PASSWORD: petclinic
+     MYSQL_DATABASE: petclinic
+     MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    restart: always
+  
+  pc-app:
+    container_name: pc-app
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - pc-db
