@@ -12,9 +12,9 @@ Changes done:
 - Add mysql specific db config entires in the applicaiton.properties file
 
 To run the docker:
-clone the project
-do a mvn package
-docker-compose up --build -d
+1. clone the project
+2. do a mvn package
+3. docker-compose up --build -d
 
 
 
