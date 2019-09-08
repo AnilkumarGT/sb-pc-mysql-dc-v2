@@ -11,7 +11,15 @@ Changes done:
 - Hardcoded the application.properties file to use mysql (h2 was default in the original codebase)
 - Add mysql specific db config entires in the applicaiton.properties file
 
-To run on docker:
+To run the docker:
+clone the project
+do a mvn package
+docker-compose up --build -d
+
+
+
+Was hoping the follwing would work, but it does not work due to missing its own network:
+To run on docker, without docker-compose:
 1. Do a mvn package first 
 2. docker build -t gt/petclinic .
 3. First launch mysql:
