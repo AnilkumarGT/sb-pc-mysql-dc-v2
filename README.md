@@ -3,8 +3,7 @@
 Forked the https://github.com/spring-projects/spring-petclinic repo
 
 My requirements:
-- Have a Spring boot based petclinic codebase that worked with MySql as db, so that i could run this in one docker container talk to a mysql db running in a separate container.
-- Use it as part of docker compose
+- Have a Spring boot based petclinic app that worked with MySql as db and to be used as part of docker compose
 - Simple profile switch on the original project would not work, given that the jdbc url has to have a reference to the mysql container name
 
 Changes done:
